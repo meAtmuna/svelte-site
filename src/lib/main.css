@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background: rgba(218, 209, 209, 0.918);
+}
+
+.white-block{
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-element{
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.button-style{
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    text-decoration: none;
+}
