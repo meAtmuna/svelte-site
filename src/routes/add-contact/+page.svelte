@@ -1,10 +1,18 @@
 <script>
-    let name = '';
-    let address = '';
-    let phone = '';
+    let name = $state('');
+    let address = $state('');
+    let phone = $state('');
 
-    function save_contact() {
-        console.log(name, address, phone);
+    async function save_contact() {
+        const response = await fetch('/api/add-contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, address, phone })
+        });
+
+        await response.json();
+
+        window.location.href = '/';
     }
 </script>
 
