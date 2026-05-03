@@ -35,25 +35,29 @@
     }
 </script>
 
-<main class="white-block">
-    {#each contacts as contact}
-        <div class="contact-element">
-            <div>
-                <p>{contact.name}</p>
-                <p>{contact.address}</p>
-            </div>
-            <div style="text-align: right;">
-                <p>{contact.phone}</p>
-                <button onclick={() => remove_contact(contact.name, contact.address, contact.phone)}>
-                    Delete
-                </button>
-            </div>
-        </div>
-    {:else}
-            <p>No contacts found</p>
-    {/each}
+<div class="main-container">
+    <h2>Contact Book</h2>
 
-        <div style="text-align: center; margin-top: 1rem;">
-            <a href="/add-contact" class="button-style">Add contact</a>
-        </div>
-</main>
+    <main class="white-block">
+        {#each contacts as contact}
+            <div class="contact-element">
+                <div>
+                    <p>Name: {contact.name}</p>
+                    <p>Address: {contact.address}</p>
+                    <p>Phone Number: {contact.phone}</p>
+                </div>
+                <div style="text-align: right;">
+                    <button onclick={() => remove_contact(contact.name, contact.address, contact.phone)}>
+                        Delete
+                    </button>
+                </div>
+            </div>
+        {:else}
+                <p>No contacts found</p>
+        {/each}
+    
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="/add-contact" class="button-style">Add contact</a>
+            </div>
+    </main>
+</div>

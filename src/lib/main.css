@@ -5,28 +5,91 @@
 }
 
 body{
-    font-family: Arial;
-    background: rgba(218, 209, 209, 0.918);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:  #e0f2fe;
+}
+
+.main-container{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+    color: #0369a1;
 }
 
 .white-block{
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.text-input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #7dd3fc;
+    outline: none;
+    font-size: 18px;
+}
+
+.text-input:focus{
+    border-color: #0284c7;
 }
 
 .contact-element{
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #f0f9ff;
+}
+
+.contact-element:hover{
+    background: #bae6fd;
+    transform: translateY(-2px);
+}
+
+.contact-element p:first-child{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-element p{
+    font-size: 16px;
 }
 
 .button-style{
-    background: black;
-    color: white;
+    background: #0284c7;
+    color: #ffffff;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 14px;
     border-radius: 7px;
     text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-style:hover{
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+button{
+    background: #f97316;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover{
+    background: #ea580c;
 }
